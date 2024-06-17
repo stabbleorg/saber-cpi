@@ -1,0 +1,17 @@
+[package]
+name = "saber-stable-swap"
+version = "0.1.0"
+description = "CPI Adapter for Saber Stable Swap"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "saber_stable_swap"
+
+[features]
+default = ["cpi"]
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+
+[dependencies]
+anchor-lang = "0.30.0"
